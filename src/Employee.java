@@ -9,6 +9,9 @@ public abstract class Employee {
 	protected interface Date{
 		void msg();
 	}
+	protected interface Location{
+		void office_location();
+	}
 	
 	
 	public long getPh_num() {

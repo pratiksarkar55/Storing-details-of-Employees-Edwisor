@@ -13,6 +13,9 @@ public class Main {
 	 System.out.println("Employee ID="+m.empID+" "+"NAME="+m.name+" "+"PHONE_NUM= "+m.getPh_num()+" DESIGNATION = "
 			 +m.getDesignation()+" "+"SALARY="+m.getSalary()+" "
 			 +"THIS YEAR RATINGS="+m.Ratings(3,"PRATK SARKAR"));
+	 Office_Details od = new Office_Details(148);
+	 od.office_location();
+	 od.msg();
 	 
 	 
 	 m.msg();
