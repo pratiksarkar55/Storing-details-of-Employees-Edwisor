@@ -1,10 +1,24 @@
 
 public abstract class Employee {
-	protected String name;
+	 String name;
 	protected String designation;
 	protected double salary;
 	protected final long empID;
+	private long ph_num;
 	
+	protected interface Date{
+		void msg();
+	}
+	
+	
+	public long getPh_num() {
+		return ph_num;
+	}
+
+	public void setPh_num(long ph_num) {
+		this.ph_num = ph_num;
+	}
+
 	public Employee(long empID){
 		this.empID=empID;
 	}
@@ -30,5 +44,6 @@ public abstract class Employee {
 	protected void setDesignation(String designation) {
 		this.designation = designation;
 	}
+	
 	
 }

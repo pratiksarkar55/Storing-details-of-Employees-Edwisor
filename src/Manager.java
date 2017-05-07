@@ -1,5 +1,5 @@
 
-public class Manager extends Employee {
+public  class Manager  extends Employee implements Employee.Date {
 	
 		// TODO Auto-generated constructor stub
 	public Manager(long empID){
@@ -11,8 +11,23 @@ public class Manager extends Employee {
 	public double getSalary(){
 		return salary;
 	}
-	public final int Ratings(int r){
+	protected final int Ratings(int r){
 		rating=r;
 		return rating;
 	}
+	protected final int Ratings(int r,String name){/** METHOD OVERLOADING         **/
+		rating=r;
+		return rating;
+	}
+	@Override
+	public void msg() {
+		System.out.println("Intial joining was given by Manager on 05/07/2017");
+		
+	}
+	
+
+	
+	
+	
+	
 }
