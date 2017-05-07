@@ -1,5 +1,7 @@
+package Mypack1;
+import Mypack1.*;;
 
-public  class Office_Details extends Employee implements Employee.Date,Employee.Location {
+public  class Office_Details extends Employee implements Mypack1.Employee.Date,Mypack1.Employee.Location {
 
 	protected Office_Details(long empID) {
 		super(empID);

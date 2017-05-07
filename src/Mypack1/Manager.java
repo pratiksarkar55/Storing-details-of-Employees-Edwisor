@@ -1,3 +1,4 @@
+package Mypack1;
 
 public  class Manager  extends Employee implements Employee.Date {
 	
@@ -11,11 +12,11 @@ public  class Manager  extends Employee implements Employee.Date {
 	public double getSalary(){
 		return salary;
 	}
-	protected final int Ratings(int r){
+	public final int Ratings(int r){
 		rating=r;
 		return rating;
 	}
-	protected final int Ratings(int r,String name){/** METHOD OVERLOADING         **/
+	public final int Ratings(int r,String name){/** METHOD OVERLOADING         **/
 		rating=r;
 		return rating;
 	}

@@ -1,9 +1,10 @@
+package Mypack1;
 
 public abstract class Employee {
 	 String name;
 	protected String designation;
 	protected double salary;
-	protected final long empID;
+	public final long empID;
 	private long ph_num;
 	
 	protected interface Date{
@@ -26,25 +27,25 @@ public abstract class Employee {
 		this.empID=empID;
 	}
 
-	protected String getName() {
+	public String getName() {
 		return name;
 	}
 
-	protected void setName(String name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 
 	protected abstract double getSalary();
 	
-	protected void setSalary(double salary) {
+	public void setSalary(double salary) {
 		this.salary = salary;
 	}
 
-	protected String getDesignation() {
+	public String getDesignation() {
 		return designation;
 	}
 
-	protected void setDesignation(String designation) {
+	public void setDesignation(String designation) {
 		this.designation = designation;
 	}
 	
